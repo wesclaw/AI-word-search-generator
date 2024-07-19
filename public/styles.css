@@ -1,0 +1,4 @@
+pre {
+  white-space: pre-wrap; /* Preserve whitespace */
+  font-family: monospace; /* Use monospace font for the puzzle */
+}
