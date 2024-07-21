@@ -30,3 +30,40 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+const express = require('express')
+const http = require('http')
+const app = express()
+const server = http.createServer(app)
+const WebSocket = require('ws')
+
+
+const wss = new WebSocket.Server({ server })
+
+app.use(express.static('public'));
+
+
+app.get('/', (req, res) => {
+  const indexPath = path.join(__dirname, 'public', 'index.html');
+  res.sendFile(indexPath);
+});
+
+wss.on('connection', (ws) => {
+  ws.on('message', (data) => {
+    
+    
+  });
+});
+
