@@ -1,0 +1,15 @@
+.puzzle{
+  background-color: lime;
+  min-height: 200px;
+  width: 400px;
+  font-size: 2rem;
+  word-wrap: wrap;
+
+
+
+  white-space: pre-wrap;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: monospace;
+}
